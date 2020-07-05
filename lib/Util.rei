@@ -1,0 +1,1 @@
+let json_get: string => result(Yojson.Basic.t, string);

@@ -1,0 +1,12 @@
+{
+    "name": "ReasonML Native",
+    "image": "node:12",
+    "extensions": [
+        "jaredly.reason-vscode"
+    ],
+    "remoteEnv": {
+        "PATH": "${containerEnv:PATH}:/home/node/.yarn/bin"
+    },
+    "postCreateCommand": "yarn global add esy && /home/node/.yarn/bin/esy",
+    "remoteUser": "node"
+}
